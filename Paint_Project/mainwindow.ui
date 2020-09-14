@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="Circle_R">
+      <property name="text">
+       <string>Circle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QRadioButton" name="Triangle_R">
+      <property name="text">
+       <string>Triangle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="Line_R">
+      <property name="text">
+       <string>Line</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="2" colspan="7">
+     <widget class="QLabel" name="Main_Box">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+border-style:inset;
+border-width : 1.2px;
+border-color: black;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QRadioButton" name="Rectangle_R">
+      <property name="text">
+       <string>Rectangle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QRadioButton" name="draw">
+      <property name="text">
+       <string>Draw</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>578</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_PPM"/>
+    <addaction name="actionSave_PPM"/>
+    <addaction name="actionLoad_Compressed"/>
+    <addaction name="actionSave_Compressed"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionLoad_PPM">
+   <property name="text">
+    <string>Load PPM</string>
+   </property>
+  </action>
+  <action name="actionSave_PPM">
+   <property name="text">
+    <string>Save PPM</string>
+   </property>
+  </action>
+  <action name="actionLoad_Compressed">
+   <property name="text">
+    <string>Load Compressed</string>
+   </property>
+  </action>
+  <action name="actionSave_Compressed">
+   <property name="text">
+    <string>Save Compressed</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
